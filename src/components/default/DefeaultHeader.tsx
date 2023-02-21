@@ -7,7 +7,7 @@ const navigation = [
   { name: "Home", to: "/", current: true },
   { name: "Sign In", to: "/SignIn", current: false },
   { name: "Sign Up", to: "/SignUp", current: false },
-  { name: "Calendar", to: "#", current: false },
+  { name: "Categories", to: "/Categories", current: false },
 ];
 
 function classNames(...classes: any) {
