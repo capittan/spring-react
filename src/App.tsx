@@ -6,6 +6,7 @@ import DefaultLayout from './components/default';
 import NotFoundPage from './components/notFound/notFoundPage';
 import SignUpPage from './components/auth/Sign Up';
 import CategoryPage from './components/categories';
+import CreateCategoryPage from './components/categories/create';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/SignIn" element={<SignInPage />} />
           <Route path="/SignUp" element={<SignUpPage />} />
           <Route path="/Categories" element={<CategoryPage />} />
+          <Route path="/CreateCategory" element={<CreateCategoryPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

@@ -8,6 +8,7 @@ const navigation = [
   { name: "Sign In", to: "/SignIn", current: false },
   { name: "Sign Up", to: "/SignUp", current: false },
   { name: "Categories", to: "/Categories", current: false },
+  { name: "Add category", to: "/CreateCategory", current: false },
 ];
 
 function classNames(...classes: any) {
