@@ -8,7 +8,7 @@ const navigation = [
   { name: "Sign In", to: "/SignIn", current: false },
   { name: "Sign Up", to: "/SignUp", current: false },
   { name: "Categories", to: "/Categories", current: false },
-  { name: "Add category", to: "/CreateCategory", current: false },
+  { name: "Products", to: "/Products", current: false },
 ];
 
 function classNames(...classes: any) {
@@ -75,7 +75,7 @@ const DefaultHeader = () => {
                     <span className="sr-only">View notifications</span>
                     <BellIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
-                  
+
 
                   {/* Profile dropdown */}
                   <Menu as="div" className="relative ml-3">
@@ -102,26 +102,26 @@ const DefaultHeader = () => {
                         <Menu.Item>
                           {({ active }) => (
                             <a
-                              href="#"
+                              href="/CreateCategory"
                               className={classNames(
                                 active ? "bg-gray-100" : "",
                                 "block px-4 py-2 text-sm text-gray-700"
                               )}
                             >
-                              Your Profile
+                              Manage categories
                             </a>
                           )}
                         </Menu.Item>
                         <Menu.Item>
                           {({ active }) => (
                             <a
-                              href="#"
+                              href="/CreateProduct"
                               className={classNames(
                                 active ? "bg-gray-100" : "",
                                 "block px-4 py-2 text-sm text-gray-700"
                               )}
                             >
-                              Settings
+                              Manage products
                             </a>
                           )}
                         </Menu.Item>
@@ -144,7 +144,7 @@ const DefaultHeader = () => {
                 </div>
               </div>
             </div>
-            
+
 
             <Disclosure.Panel className="sm:hidden">
               <div className="space-y-1 px-2 pt-2 pb-3">
